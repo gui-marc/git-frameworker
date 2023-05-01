@@ -96,11 +96,7 @@ const createProject = async () => {
 
   try {
     await mkdirAsync(projectName);
-    await cpAsync(
-      process.cwd() + '/.git-repo-temp',
-      process.cwd() + '/' + projectName,
-      { recursive: true }
-    );
+    await cpAsync('.git-repo-temp', projectName, { recursive: true });
   } catch (err) {
     spinner.error({ text: `Error creating project\n${err}` });
     process.exit(1);
