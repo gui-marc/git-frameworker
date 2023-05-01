@@ -1,3 +1,5 @@
+![Git Frameworker](/docs/imgs/cover.png)
+
 # Git Frameworker
 
 Git Frameworker is a tool that allows you to quickly bootstrap a project using a framework from GitHub. If the repository you clone contains a `framework.json` file, Git Frameworker will automatically create a CLI to configure and bootstrap the project.
